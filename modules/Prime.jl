@@ -1,6 +1,6 @@
 module Prime
 
-export isprime, nthprime, primefactors
+export isprime, nthprime, primeslessthan, primefactors
 
 function isprime(n::Int)
     if n <= 3
@@ -32,6 +32,28 @@ function nthprime(n::Int)
         end
     end
     return candidate
+end
+
+function primeslessthan(n::Number)
+    primes = Int[]
+    if n >= 3
+        push!(primes, 2)
+    end
+    if n >= 4
+        push!(primes, 3)
+    end
+    if n <= 5
+        return primes
+    end
+
+    candidate = 5
+    while (candidate < n)
+        if isprime(candidate)
+            push!(primes, candidate)
+        end
+        candidate += 2
+    end
+    return primes
 end
 
 function primefactors(n::Int)
