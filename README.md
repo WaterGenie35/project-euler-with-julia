@@ -7,5 +7,6 @@ A combined exercise on programming, mathematics, and learning a new language.
 ## Setup
 
 ```shell
+cd /path/to/project-euler-with-julia
 source .bashrc
 ```
