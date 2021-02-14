@@ -16,6 +16,7 @@ function factorsof(n::Int)
     while (candidate ^ 2) <= n
         if multipleof(n, candidate)
             push!(factors, candidate)
+            push!(factors, n / candidate)
         end
         candidate += 1
     end
