@@ -1,16 +1,4 @@
-
-
-function ispalindrome(n::Int)
-    if n < 0
-        n = -n
-    end
-    if n < 10
-        return true
-    end
-    forward_string = string(n)
-    backward_string = reverse(forward_string)
-    return forward_string == backward_string
-end
+using Utility
 
 
 function maxpalindromeproduct(digit::Int=3)

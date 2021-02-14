@@ -1,6 +1,4 @@
-function ispythagoreantriplet(a::Int, b::Int, c::Int)
-    return (a^2 + b^2) == c^2
-end
+using Utility
 
 
 function pythagoreantriplet_sumto(n::Int)

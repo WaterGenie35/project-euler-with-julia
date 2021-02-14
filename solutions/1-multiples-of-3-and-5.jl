@@ -1,8 +1,4 @@
-
-
-function multipleof(n::Int, base::Int)
-    return (n % base) == 0
-end
+using Utility
 
 
 function multipleof_or(n::Int, bases::Int...)

@@ -1,23 +1,4 @@
-
-
-function fibonacci(n::Int, basecase=(1, 2))
-    if n < 1
-        return nothing
-    end
-    if n <= 2
-        return basecase[n]
-    end
-    fn1 = basecase[1]
-    fn2 = basecase[2]
-    sum = 0
-    for current = 3:n
-        sum = fn1 + fn2
-        fn1 = fn2
-        fn2 = sum
-    end
-    return sum
-end
-
+using Utility
 
 #=
 First, we prove by induction that for all positive natural number n,
