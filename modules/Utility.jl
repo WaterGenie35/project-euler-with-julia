@@ -1,6 +1,9 @@
 module Utility
 
-export multipleof, factorsof, fibonacci, ispalindrome, ispythagoreantriplet
+export multipleof, factorsof
+export firstndigits
+export fibonacci
+export ispalindrome, ispythagoreantriplet
 
 
 function multipleof(n::Int, base::Int)
@@ -21,6 +24,14 @@ function factorsof(n::Int)
         candidate += 1
     end
     return factors
+end
+
+
+function firstndigits(num::Number, n::Int)
+    numdigits = floor(log(10, num))
+    divider = 10 ^ (numdigits - n + 1)
+    ndigits = floor(num / divider)
+    return ndigits
 end
 
 
