@@ -1,1 +1,1 @@
-export JULIA_LOAD_PATH="$(PWD)/modules:$JULIA_LOAD_PATH"
+export JULIA_LOAD_PATH="$(pwd)/modules:$JULIA_LOAD_PATH"

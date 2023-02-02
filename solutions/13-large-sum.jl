@@ -1,3 +1,4 @@
+using Printf
 using Utility
 
 
@@ -105,3 +106,4 @@ numbers = [
 
 
 @show firstndigits(sum(numbers), 10)
+@printf "%d\n" firstndigits(sum(numbers), 10)
